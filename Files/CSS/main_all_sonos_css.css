@@ -1,37 +1,126 @@
-.main {
-    width: 20vw;
+@font-face {
+    font-family: SST_light;
+    src: url("../../sources/Font/SST_light/SST-Light.ttf");
 }
 
-.main1 {
+@font-face {
+    font-family: SST_UL;
+    src: url("../../sources/Font/SST_UL/SST-UltraLight.ttf");
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url("../../sources/Font/BebasNeue/bebasneuelight.ttf");
+}
+
+@font-face {
+    font-family: aktiv-grotesk_m;
+    src: url("../../sources/Font/aktiv-grotesk/AktivGroteskCorp-Medium.ttf");
+}
+
+@font-face {
+    font-family: aktiv-grotesk_l;
+    src: url("../../sources/Font/aktiv-grotesk/AktivGroteskCorp-Regular.ttf");
+}
+
+@font-face {
+    font-family: aktiv-grotesk_b;
+    src: url("../../sources/Font/aktiv-grotesk/AktivGroteskCorp-Bold.ttf");
+}
+
+body {
+    background-color: #d8d8d8;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "div_img_main all_text_main";
+    height: 28vw;
+    width: 95vw;
+    position: relative;
+    top: -4vw;
+}
+
+.div_img_main {
+    grid-area: div_img_main;
+    text-align: center;
+    position: relative;
+    left: -4.5vw;
+    top: 2vw;
+}
+
+.all_text_main {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "img_main1 text_for_main1"
-      ". ."
-      ". .";
+      "name_main"
+      "des_main"
+      "coast_main";
+    grid-area: all_text_main;
+    font-family: aktiv-grotesk_m;
 }
-.img_main1 {
-    grid-area: img_main1;
+
+.name_main {
+    grid-area: name_main;
+    font-size: 4vw;
 }
-.text_for_main1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1.3fr 0.7fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "name_main1"
-      "des_main1"
-      "coast_main1";
-    grid-area: text_for_main1;
+
+.des_main {
+    grid-area: des_main;
+    font-family: aktiv-grotesk_l;
+    font-size: 1.3vw;
+    position: relative;
+    top: -5vw;
+    left: 0.2vw;
 }
-.coast_main1 {
-    grid-area: coast_main1;
+
+.coast_main {
+    grid-area: coast_main;
+    font-family: aktiv-grotesk_l;
+    font-size: 2vw;
 }
-.des_main1 {
-    grid-area: des_main1;
+
+.img_main1_img {
+    width: 9vw;
+    position: relative;
+    left: 1.6vw;
 }
-.name_main1 {
-    grid-area: name_main1;
+
+.img_main2 {
+    width: 40vw;
+    position: relative;
+    top: 6vw;
+    left: 2vw;
+}
+
+.img_main4 {
+    width: 10vw;
+    position: relative;
+    left: 8.5vw;    
+}
+
+.img_main3 {
+    width: 40vw;
+    position: relative;
+    top: 5vw;
+    left: 2vw;
+}
+.osnovs {  
+    position: relative;
+    top: 4vw;
+}
+
+hr {
+    position: relative;
+    top: -5vw;
+    color: black;
+    width: 85vw;
 }

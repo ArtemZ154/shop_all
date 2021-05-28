@@ -44,7 +44,6 @@ body {
     height: 28vw;
     width: 95vw;
     position: relative;
-    top: -4vw;
 }
 
 .div_img_main {
@@ -52,7 +51,6 @@ body {
     text-align: center;
     position: relative;
     left: -4.5vw;
-    top: 2vw;
 }
 
 .all_text_main {
@@ -78,7 +76,6 @@ body {
     font-family: aktiv-grotesk_l;
     font-size: 1.3vw;
     position: relative;
-    top: -5vw;
     left: 0.2vw;
 }
 
@@ -97,30 +94,52 @@ body {
 .img_main2 {
     width: 40vw;
     position: relative;
-    top: 6vw;
     left: 2vw;
+    top: 7vw;
 }
 
 .img_main4 {
     width: 10vw;
     position: relative;
-    left: 8.5vw;    
+    left: 8.5vw;
+    top: 4vw;  
 }
 
 .img_main3 {
     width: 40vw;
     position: relative;
-    top: 5vw;
     left: 2vw;
+    top: 7vw;
 }
 .osnovs {  
     position: relative;
-    top: 4vw;
+    top: -2vw;
 }
 
 hr {
     position: relative;
-    top: -5vw;
     color: black;
     width: 85vw;
+}
+
+.img_main8 {
+    position: relative;
+    top: -5vw;
+}
+
+.img_main11 {
+    position: relative;
+    top: -5vw;
+}
+
+.img_logo {
+    width: 7.5vw;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -1.4vw;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
